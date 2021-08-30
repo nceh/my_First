@@ -445,7 +445,7 @@ friends = ["ali" ,"reza","shima"]
 for thisone in friends:
     print("salam %s" % thisone)
 
-
+nama ="nceh"
 # In[ ]:
 
 
