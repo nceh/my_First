@@ -11,4 +11,4 @@ with open('nceh1.csv') as f:
             these_grades.append(int(grade))
             # print(name , grade, these_grades)
 
-        print("avarage of %s is %f" % (name, mean(these_grades)))
+        print("avarage of %10s is %5.2f" % (name, mean(these_grades)))
