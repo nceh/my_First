@@ -12,7 +12,6 @@ for i in range(0, number_of_laptops):
 
 def find_better_lp(number_of_laptops):
 
-
 if number_of_laptops == 0:
     return print("empty list")
 
