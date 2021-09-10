@@ -72,18 +72,50 @@
 # Information.get_color()
 
 
-class Vehicle:
-    def __init__(model, name):
-        model.name = name
+# class Vehicle:
+#     def __init__(model, name):
+#         model.name = name
+#
+#     def get_name(model):
+#         print("Vehicle name is %s" % model.name)
+#
+#     def get_color(model):
+#         color = input()
+#         print("Vehicle color is %s" % color)
+#
+#
+# Information = Vehicle("Hossein")
+# Information.get_name()
+# Information.get_color()
 
-    def get_name(model):
-        print("Vehicle name is %s" % model.name)
 
-    def get_color(model):
-        color = input()
-        print("Vehicle color is %s" % color)
+# class maktabkhooneh:
+#     def __init__(self, name, grade, age):
+#         self.name = name
+#         self.grade = grade
+#         self.age = age
+#
+#     def value(self):
+#         return self.name + self.grade
+#
+#
+# person = maktabkhooneh("Ahmad", "Master", 24)
+# print(person.value())
 
 
-Information = Vehicle("Hossein")
-Information.get_name()
-Information.get_color()
+class mobile:
+    def __init__(self, name, brand):
+        self.name = name
+        self.brand = brand
+
+    def get_name(self):
+        return self.name
+
+
+class cpu(mobile):
+    def get_name(self):
+        print("This mobile has HighTech %s CPU " % self.name)
+
+
+brand = cpu("Intel", "Sony")
+print(brand.get_name())
