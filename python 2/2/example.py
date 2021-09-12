@@ -34,3 +34,23 @@
 #     reader = csv.reader(f2)
 #     for row in reader:
 #         print(row)
+
+
+import csv
+
+
+class Customer:
+    def __init__(self, name, nationalcode, sumpurchase):
+        self.name = name
+        self.nationalcode = nationalcode
+        self.sumpurchase = sumpurchase
+
+
+class_customers = []
+
+with open('Book1.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        customerObj = Customer(row[0], row[1], row[2])
+        class_customers.append(customerObj)
+        print(row)
