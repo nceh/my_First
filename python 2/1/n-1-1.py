@@ -1,7 +1,7 @@
 def maghsom(a):
     tedad = 0
     for i in range(1, a + 1):
-        if not a % i:
+        if a % i == 0 and:
             tedad += 1
     return tedad
 
