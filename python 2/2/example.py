@@ -28,9 +28,9 @@
 #     if adadT
 
 
-import csv
-
-with open('Book1.csv') as f2:
-    reader = csv.reader(f2)
-    for row in reader:
-        print(row)
+# import csv
+#
+# with open('Book1.csv') as f2:
+#     reader = csv.reader(f2)
+#     for row in reader:
+#         print(row)
