@@ -1,11 +1,11 @@
-from sklearn.decomposition import PCA
 import numpy as np
 import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.impute import SimpleImputer
 
-df3 = pd.read_csv('cancer.csv')
-df3 = df3.replace('?', np.nan)
+df = pd.read_csv('cancer.csv')
+df = df.replace('?', np.nan)
+df3 = df.iloc[:, 1:10]
 # print(df3.isnull().sum())
 
 
@@ -18,4 +18,8 @@ pca = PCA(n_components=2)
 principalComponents = pca.fit_transform(df3)
 principalDf = pd.DataFrame(data=principalComponents
                            , columns=['principal component 1', 'principal component 2'])
-print(principalDf)
+# print(principalDf)
+
+df3 = pd.concat([df["class"]])
+cancer = pd.concat([principalDf, df['class']], axis=1)
+print(cancer)
