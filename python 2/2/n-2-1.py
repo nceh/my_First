@@ -1,24 +1,27 @@
-class A:
-    n = int(input())
-    count = 0
-    list_ghad = []
-    list_vazn = []
-    list_sen = []
+class Student:
+    ghad = 0
+    vazn = 0
+    sen = 0
 
     def __init__(self, ghad, vazn, sen):
         self.ghad = ghad
         self.vazn = vazn
         self.sen = sen
 
-    def get_ghad(self):
-        list_ghad.append(ghad)
-        sum = sum(list_ghad)
 
-        average = sum / n
-        print("The Average is %i" % average)
+class School:
+    students = []
+
+    def setStudents(self, count):
+        pass
+
+    def calcAvg(self):
+        pass
 
 
-nceh = A(165, 48, 25)
-
-# class B(A):
-#     t = int(input())
+count1 = int(input())
+schoolA = School
+schoolA.setStudents(count1)
+count2 = int(input())
+schoolB = School
+schoolB.setStudents(count2)
